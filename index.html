@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>DIDI - Dancer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>  
     <header class="navbar">
         <div class="nav-item">DIDI</div>
@@ -22,14 +21,39 @@
                 <a href="#"><i class="fa fa-whatsapp"></i></a>
             </div>
         </div>
-
+        
+        <!-- Mobile Burger Menu -->
+        <div class="burger-menu" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
 
-    <section>
+    <!-- Mobile Navigation -->
+    <div class="mobile-overlay" onclick="closeMobileMenu()"></div>
+    <nav class="mobile-nav">
+        <div class="nav-item" onclick="closeMobileMenu()">DIDI</div>
+        <div class="nav-item" onclick="closeMobileMenu()">GALLERY</div>
+        <div class="nav-item" onclick="closeMobileMenu()">ABOUT ME</div>
+        <div class="nav-item">CONTACT</div>
+        <div class="dropdown-content">
+            <a href="instagram.com"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-envelope-o"></i></a>
+            <a href="#"><i class="fa fa-whatsapp"></i></a>
+        </div>
+    </nav>
+    
+    <div class="main-content">
         <h1>DIDI</h1>
+        <div class="mobile-title">
+            DANCER<br>
+            MODEL<br>
+            AGENT
+        </div>
         <img src="assets/didi.png" alt="Didi Portrait">
-    </section>
+    </div>
 
+    <script src="script.js"></script>
 </body>
-
 </html>
